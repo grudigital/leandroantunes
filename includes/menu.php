@@ -24,7 +24,7 @@
 
                 <li style="color: #fff; font-size: 16px" class="menu-title">Publicidade</li>
                 <li>
-                    <a href="anuncios" class="waves-effect"><i class="mdi mdi-chart-line"></i><span>Anúncios</span></a>
+                    <a href="anuncios.php" class="waves-effect"><i class="mdi mdi-chart-line"></i><span>Anúncios</span></a>
                 </li>
 
                 <li style="color: #fff; font-size: 16px" class="menu-title">Acesso</li>
