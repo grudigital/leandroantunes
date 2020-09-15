@@ -16,7 +16,7 @@
 
                 <li style="color: #fff; font-size: 16px" class="menu-title">Blog</li>
                 <li>
-                    <a href="publicacoes" class="waves-effect"><i class="mdi mdi-calendar-check"></i><span>Publicações</span></a>
+                    <a href="publicacoes.php" class="waves-effect"><i class="mdi mdi-calendar-check"></i><span>Publicações</span></a>
                 </li>
                 <li>
                     <a href="categorias.php" class="waves-effect"><i class="mdi mdi-clipboard-outline"></i><span>Categorias</span></a>
