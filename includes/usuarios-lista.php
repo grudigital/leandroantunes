@@ -3,11 +3,8 @@
         <table id="tech-companies-1" class="table  table-striped">
             <thead>
             <tr>
-                <th style="width: 15%">Status</th>
-                <th style="width: 23%">Name</th>
-                <th style="width: 23%">Mail</th>
-                <th style="width: 16%">Profile</th>
-                <th style="width: 19%">Registration date</th>
+                <th style="width: 48%">Nome</th>
+                <th style="width: 48%">E-mail</th>
                 <th style="width: 2%"></th>
                 <th style="width: 2%"></th>
 
@@ -20,32 +17,10 @@
             $result = mysqli_query($conn, $sql);
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>";
-
-                if($row['status'] == 1){
-                    echo "<td><a href='functions/usuario_status_1.php?id=$row[id]'><button type='button' class='btn btn-success'>Active user</button></a></td>";
-                }
-                else{
-                    echo "<td><a href='functions/usuario_status_2.php?id=$row[id]'><button type='button' class='btn btn-danger'>Inactive user</button></a></td>";
-
-                }
                 echo "<td>$row[nome]</td>";
                 echo "<td>$row[email]</td>";
-
-                if($row['perfil'] == '1'){
-                    echo "<td>Administrator</td>";
-                }
-                else if($row['perfil'] == '2'){
-                    echo "<td>Operational team</td>";
-                }
-                else{
-                    echo "<td>Delivery team</td>";
-                }
-
-
-
-                echo "<td>$row[datacadastro]</td>";
-                echo "<td><a href='usuarios_editar.php?id=$row[id]'><button type='button' class='btn btn-warning'>Edit</button></a></td>";
-                echo "<td><a href='functions/usuarios_excluir.php?id=$row[id]'><button type='button' class='btn btn-danger'>Delete</button></a></td>";
+                echo "<td><a href='usuarios_editar.php?id=$row[id]'><button type='button' class='btn btn-warning'>Editar</button></a></td>";
+                echo "<td><a href='functions/usuarios_excluir.php?id=$row[id]'><button type='button' class='btn btn-danger'>Apagar</button></a></td>";
                 echo "</tr>";
             }
             ?>

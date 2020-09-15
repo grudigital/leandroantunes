@@ -23,7 +23,7 @@ if ($_SESSION['usuarioNome'] == '') {
                             </button>
                         </li>
                         <li class="hide-phone list-inline-item app-search">
-                            <h3 class="page-title">Management panel</h3>
+                            <h3 class="page-title">Painel de gerenciamento</h3>
                         </li>
                     </ul>
 
@@ -31,17 +31,10 @@ if ($_SESSION['usuarioNome'] == '') {
                 </nav>
 
             </div>
-            <!-- Top Bar End -->
-
-            <!-- ==================
-                 PAGE CONTENT START
-                 ================== -->
-
             <div class="page-content-wrapper">
 
                 <div class="container-fluid">
 
-                    <!--<div style="background-color: #000; height: 200px; width: 100%">-->
                     <div class="row">
                         <div class="col-md-6 col-xl-3">
                             <div class="mini-stat clearfix bg-white">

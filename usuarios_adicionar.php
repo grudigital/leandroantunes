@@ -25,7 +25,7 @@ if ($_SESSION['usuarioNome'] == '') {
                             </button>
                         </li>
                         <li class="hide-phone list-inline-item app-search">
-                            <h3 class="page-title">Management Panel :: Users :: Add</h3>
+                            <h3 class="page-title">Painel de gerenciamento :: Usuários :: Adicionar</h3>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -41,8 +41,8 @@ if ($_SESSION['usuarioNome'] == '') {
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-4">
-                                                <h4 class="mt-0 header-title">Users</h4>
-                                                <p class="text-muted m-b-30 font-14">Add user</p>
+                                                <h4 class="mt-0 header-title">Usuários</h4>
+                                                <p class="text-muted m-b-30 font-14">Adicionar usuário</p>
                                             </div>
                                             <div class="col-6"></div>
                                             <div class="col-2">
@@ -51,44 +51,30 @@ if ($_SESSION['usuarioNome'] == '') {
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="example-text-input" class="col-sm-2 col-form-label">Name</label>
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Nome</label>
                                         <div class="col-sm-10">
-                                            <input class="form-control" name="nome" type="text" placeholder="Name"
+                                            <input class="form-control" name="nome" type="text" placeholder="Nome"
                                                    id="example-text-input">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="example-text-input" class="col-sm-2 col-form-label">Mail</label>
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">E-mail</label>
                                         <div class="col-sm-10">
-                                            <input class="form-control" name="email" type="text" placeholder="Mail"
+                                            <input class="form-control" name="email" type="text" placeholder="E-mail"
                                                    id="example-text-input">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="example-text-input" class="col-sm-2 col-form-label">Password</label>
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Senha</label>
                                         <div class="col-sm-10">
-                                            <input class="form-control" name="senha" type="text" placeholder="Password"
+                                            <input class="form-control" name="senha" type="text" placeholder="Senha"
                                                    id="example-text-input">
                                         </div>
                                     </div>
-                                    <input type="hidden" value="1" name="status">
-
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Profile</label>
-                                        <div class="col-sm-10">
-                                            <select name="perfil" class="custom-select">
-                                                <option value="1" selected>Administrator</option>
-                                                <option value="2">Operational team</option>
-                                                <option value="3">Delivery team</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <input class="form-control" name="datacadastro" type="hidden"
-                                           id="example-text-input">
 
                                     <div class="form-group row">
                                         <div class="col-sm-12">
-                                            <button style="float: right" type='submit' class='btn btn-info'>Record user
+                                            <button style="float: right" type='submit' class='btn btn-info'>Adicionar usuário
                                             </button>
                                         </div>
                                     </div>

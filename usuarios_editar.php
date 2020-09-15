@@ -25,7 +25,7 @@ if ($_SESSION['usuarioNome'] == '') {
                             </button>
                         </li>
                         <li class="hide-phone list-inline-item app-search">
-                            <h3 class="page-title">Management Panel :: Users :: Edit</h3>
+                            <h3 class="page-title">Painel de gerenciamento :: Usuários :: Editar</h3>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -42,8 +42,8 @@ if ($_SESSION['usuarioNome'] == '') {
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-4">
-                                                <h4 class="mt-0 header-title">Users</h4>
-                                                <p class="text-muted m-b-30 font-14">Edit users</p>
+                                                <h4 class="mt-0 header-title">Usuários</h4>
+                                                <p class="text-muted m-b-30 font-14">Editar usuário</p>
                                             </div>
                                             <div class="col-6"></div>
                                             <div class="col-2">
@@ -56,7 +56,7 @@ if ($_SESSION['usuarioNome'] == '') {
                                     require("connections/conn.php");
 
                                     $pegaid = (int)$_GET['id'];
-                                    $sql = "select id,nome,email,perfil,datacadastro FROM usuarios where id = '$pegaid'";
+                                    $sql = "select id,nome,email FROM usuarios where id = '$pegaid'";
                                     $result = mysqli_query($conn, $sql);
 
                                     while ($row = mysqli_fetch_assoc($result)) {
@@ -64,54 +64,26 @@ if ($_SESSION['usuarioNome'] == '') {
                                                    id='example-text-input'>";
 
                                         echo "<div class='form-group row'>";
-                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Name</label>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Nome</label>";
                                         echo "<div class='col-sm-10'>";
                                         echo "<input class='form-control' name='nome' type='text' value='$row[nome]'
                                                    id='example-text-input'>";
                                         echo "</div>";
                                         echo "</div>";
                                         echo "<div class='form-group row'>";
-                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Mail</label>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>E-mail</label>";
                                         echo "<div class='col-sm-10'>";
                                         echo "<input class='form-control' name='email' type='text' value='$row[email]'
                                                    id='example-text-input'>";
                                         echo "</div>";
                                         echo "</div>";
-                                        echo "<div class='form-group row'>";
-                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Profile</label>";
-                                        echo "<div class='col-sm-10'>";
-                                        if($row['perfil'] == 1){
-                                            echo "<input class='form-control' name='perfil' type='text' value='Administrator'
-                                                   id='example-text-input' readonly='true'>";
-                                        }
-                                        else if($row['perfil'] == 2){
-                                            echo "<input class='form-control' name='perfil' type='text' value='Operational team'
-                                                   id='example-text-input' readonly='true'>";
-                                        }else{
-                                            echo "<input class='form-control' name='perfil' type='text' value='Delivery team'
-                                                   id='example-text-input' readonly='true'>";
-                                        }
-
-
-
-                                        echo "</div>";
-                                        echo "</div>";
-                                        echo "<div class='form-group row'>";
-                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Registration date</label>";
-                                        echo "<div class='col-sm-10'>";
-                                        echo "<input class='form-control' name='datacadastro' type='text' value='$row[datacadastro]'
-                                                   id='example-text-input' readonly='true'>";
-                                        echo "</div>";
-                                        echo "</div>";
-
-
                                     }
                                     mysqli_close($conn);
                                     ?>
 
                                     <div class="form-group row">
                                         <div class="col-sm-12">
-                                            <button style="float: right" type='submit' class='btn btn-info'>Update
+                                            <button style="float: right" type='submit' class='btn btn-info'>Atualizar
                                             </button>
                                         </div>
                                     </div>

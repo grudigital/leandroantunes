@@ -544,7 +544,7 @@ code {
   width: 240px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  background: #3BB1CD;
+  background: #1e1e1e;
   position: absolute;
   z-index: 99;
 }
@@ -555,7 +555,7 @@ code {
 
 .side-menu .topbar-left {
   padding-left: 30px;
-  background-color: #3BB1CD;
+  background-color: #1e1e1e;
 }
 
 body.fixed-left .side-menu.left {
@@ -726,7 +726,7 @@ body.fixed-left .side-menu.left {
   color: #fff;
   display: block;
   padding: 12px 20px;
-  background-color: #3BB1CD;
+  background-color: #1e1e1e;
 }
 
 #sidebar-menu > ul > li > a:hover {
@@ -4151,7 +4151,7 @@ Invoice
   Account Pages
 ===================*/
 .accountbg {
-  background: url("../images/bg.jpg");
+  background: url("../images/bg4.jpg");
   position: absolute;
   background-size: cover;
   height: 100%;
